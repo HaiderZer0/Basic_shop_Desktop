@@ -1,0 +1,68 @@
+<head>
+    <title> B&ouml;rni - Home</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/navbar/navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="items">
+                <h2 class="logo">B&ouml;rni</h2>
+                <ul>
+                    <a class="menu" href="/startseite2/startseite.html">Home</a>
+                    <a class="menu" href="/shop/shop.html">Shop</a>
+                    <a class="menu" href="/impressum/impressum.html">Impressum</a>
+                    <div class="line"></div>
+
+                </ul>
+                <div class="actions">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
+                    <input id="searchArea" type="text">
+                    <a href="/cart/cart.html"><i class="fa-sharp fa-solid fa-cart-shopping cart"><sub class="cart_status"></sub></i></a>
+                    <div class="profile"></div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <section>
+        <div class="containerCart">
+            <div class="itemsCart">
+                <h2 class="itemsCartTitle">Einkaufswagen</h2>
+                <hr>
+                <div class="productPage">
+                    <div class="card">
+
+                    </div>
+                </div>
+            </div>
+            <div class="infoCard">
+                <h2 class="infoCardTitle">Zahlungsinformationen</h2>
+                <div class="kosten">
+                    <div class="PreisLabels">
+                        <p class="Versandkosten">Versandkosten:</p>
+                        <p class="Gesamtpreis">Gesamtpreis:</p>
+                        <p class="Rabatt">Rabatt:</p>
+                    </div>
+                    <div class="prices">
+                        <div class="priceTag1">00.00 €</div>
+                        <div class="priceTag2">00.00 €</div>
+                        <div class="priceTag3">-00.00 €</div>
+                        
+                    </div>
+                </div>
+                <div class="finalKosten">
+                    <h2 class="Gesamt">Gesamt:</h2>
+                    <h2 class="Gesamt_preis">0000.00 €</h2>
+                </div>
+                <a href="" class="CheckoutButton">Zum Checkout</a>
+            </div>
+        </div>
+    </section>
+    <script src="cart.js"></script>
+    <script src="/navbar/navbar.js"></script>
+</body>

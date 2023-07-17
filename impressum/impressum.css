@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* nav */
+.line{
+    position: absolute;
+    width: 130px;
+    transform: translate(255px);
+
+    
+    margin-top: 40px;
+    transition: all 0.5s ease-in-out;
+    
+    background: #709775;
+    height: 3px;
+}
+
+.menu{ 
+    margin-left: 25px;
+    margin-right: 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 47px;
+
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.menu:nth-child(3) {
+    color: rgb(0, 0, 0);
+}
+
+.menu:nth-child(1):hover ~.line{
+    width: 70px;
+    transform: translate(25px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(1):hover{
+    color: black;
+}
+
+.menu:nth-child(2):hover ~.line{
+    width: 60px;
+    transform: translate(145px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(2):hover{
+    color: black;
+}
+
+/* nav searcharea */
+#searchArea{
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 12px;
+    
+    width: 0px;
+    border: 1px #7C7C7C solid;
+    opacity: 0;
+    transition: 0.5s;
+
+
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+
+#searchArea:focus{
+    outline-color: #709775 !important;
+}
+
+
+/* page */
+section {
+    height: 65%;
+}
+
+.titleImpressum {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.heading {
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid #709775;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.right {
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 10px;
+    opacity: 60%;
+}
+
+.divider {
+    left: 0;
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid #709775;
+    
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.text {
+    
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    text-overflow: clip;
+    margin-right: 40px;
+}

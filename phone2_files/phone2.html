@@ -1,0 +1,92 @@
+<head>
+    <title> B&ouml;rni - Home</title>
+    <link rel="stylesheet" href="phone2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/navbar/navbar.css">    
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="items">
+                <h2 class="logo">B&ouml;rni</h2>
+                <ul>
+                    <a class="menu" href="/startseite2/startseite.html">Home</a>
+                    <a class="menu" href="/shop/shop.html">Shop</a>
+                    <a class="menu" href="/impressum/impressum.html">Impressum</a>
+                    <div class="line"></div>
+
+                </ul>
+                <div class="actions">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
+                    <input id="searchArea" type="text">
+                    <a href="/cart/cart.html"><i class="fa-sharp fa-solid fa-cart-shopping cart"><sub class="cart_status"></sub></i></a>
+                    <div class="profile"></div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="left">
+            <h1 class="produkt_title">B&ouml;rni Phone 2</h1>
+            <div class="optionsProdukt">
+                <form class="speicher">
+                    <input class="storageOption" type="radio" id="64" name="storage" value="899,00€">
+                    <label for="64">64 GB</label><br>
+
+                    <input class="storageOption" type="radio" id="128" value="999,00€" name="storage">
+                    <label for="128">128 GB</label><br>
+
+                    <input class="storageOption" type="radio" id="256" value="1.199,00€" name="storage">
+                    <label for="256">256 GB</label><br>
+
+                    <input class="storageOption" type="radio" id="512" value="1.299,00€" name="storage" checked>
+                    <label for="512">512 GB</label><br>
+                </form>
+                <form class="farben">
+                    <div class="colorOuters" id="o1">
+                        <div class="colors" id="i1"></div>
+                    </div>
+                    <div class="colorOuters" id="o2">
+                        <div class="colors" id="i2"></div>
+                    </div>
+                    <div class="colorOuters" id="o3">
+                        <div class="colors" id="i3"></div>
+                    </div>
+                    <div class="colorOuters" id="o4">
+                        <div class="colors" id="i4"></div>
+                    </div>
+                    <div class="colorOuters" id="o5">
+                        <div class="colors" id="i5"></div>
+                    </div>
+                </form>
+            </div>
+            <article class="infoProdukt">
+                <h1 class="price">1.299,00€</h1>
+                <a class="zumWarenkorb">Zum Warenkorb</a>
+            </article>
+        </div>
+        <div class="right">
+            <div class="slides-container">
+                <input class="slidebuttons" id="button1" type="radio" name="sliderRadioGroup" checked>
+                <input class="slidebuttons" id="button2" type="radio" name="sliderRadioGroup">
+                <input class="slidebuttons" id="button3" type="radio" name="sliderRadioGroup">
+                <div id="slide1" class="slide">
+                    <img id="image1" src="/Produkt-Ansicht/phone2_photos/Blau/1.jpg">
+                </div>
+                <div id="slide2" class="slide">
+                    <img id="image2" src="/Produkt-Ansicht/phone2_photos/Blau/2.jpg">
+                </div>
+                <div id="slide3" class="slide">
+                    <img id="image3" src="/Produkt-Ansicht/phone2_photos/Blau/3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="phone2.js"></script>
+    <script src="/navbar/navbar.js"></script>
+</body>

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* nav */
+.line{
+    position: absolute;
+    transform: translate(145px);
+    margin-top: 40px;
+    transition: all 0.5s ease-in-out;
+    
+    background: #709775;
+    height: 3px;
+    width: 60px;
+}
+
+.menu{ 
+    margin-left: 25px;
+    margin-right: 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 47px;
+
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.menu:nth-child(2) {
+    color: rgb(0, 0, 0);
+}
+
+.menu:nth-child(1):hover ~.line{
+    width: 70px;
+    transform: translate(25px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(1):hover{
+    color: black;
+}
+
+.menu:nth-child(3):hover ~.line{
+    width: 130px;
+    transform: translate(255px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(3):hover{
+    color: black;
+}
+
+/* nav searcharea */
+#searchArea{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 12px;
+    
+    width: 0px;
+    border: 1px #7C7C7C solid;
+    opacity: 0;
+    transition: 0.5s;
+
+
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+
+#searchArea:focus{
+    outline-color: #709775 !important;
+}
+
+
+
+/* shop */
+
+.containerShop{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftsideShop{
+    width: 100%;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightsideShop{
+    margin-right: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cards */
+.boxcontainer{
+    margin: 20px;
+    margin-top: 60px;
+    width: 600px;
+    height: 400px;
+    perspective: 4000px;
+    color: inherit;
+}
+
+.boxcontainer:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 0 5px 2px rgba(202, 202, 202, 0.599);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.f1{
+    background-image: url(fotosShop/borni2.jpeg);
+    background-size: cover;
+}
+.f2{
+    background-image: url(fotosShop/ipad\ pro\ 1.png);
+    background-size: cover;
+}
+.f3{
+    background-image: url(fotosShop/borni1.jpeg);
+    background-size: cover;
+}
+.f4{
+    background-image: url(fotosShop/ipad\ air\ 1.png);
+    background-size: cover;
+}
+.f5{
+    background-image: url(fotosShop/borni3.jpeg);
+    background-size: cover;
+}
+.f6{
+    background-image: url(fotosShop/ipad\ 1.png);
+    background-size: cover;
+}
+
+.back{
+    background-color: #F5F5F7;
+    transform: rotateY(180deg);
+}
+
+
+.cardtitle{
+    margin: 40px;
+    font-family: 'Bruno Ace';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.cardtext{
+    margin: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #9A9999;
+    line-height: 30px;
+}
+
+.iconscard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+}
+
+.iconshop{
+    position: relative;
+    font-size: 35px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.featuresshop{
+    color: #9A9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 110px;
+}
+.features{
+    line-height: 20px;
+    font-size: 16px;
+}
+.laptops{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.laptoptitel{
+    font-family: 'Bruno Ace';
+    font-size: 60px;
+    font-weight: 200;
+}
+.buttonBuynow{
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Raleway';
+    text-decoration: none;
+
+    cursor: pointer;
+    background: #709775;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonBuynow:hover{
+    background: #8fb996;
+}
+
+aside{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 270px;
+    background: #4d6850;
+}
+.leftside{
+    padding-left: 25px;
+    width: 70%;
+    height: 100%;
+}
+.rightside{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.seprater{
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 4px;
+    height: 200px;
+}
+.rechtliches,
+.account{
+    display: flex;
+    flex-direction: column;
+    margin: 130px;
+}
+.title{
+    margin-top: 20px;
+    font-family: 'Bruno Ace';
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 200;
+}
+.underlabels{
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+.info{
+    margin-top: 5px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+.labels{
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+.icon{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.underlabels:hover{
+    color: black;
+}

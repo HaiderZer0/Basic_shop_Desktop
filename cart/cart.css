@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* nav */
+.line{
+    position: absolute;
+    transform: translate(145px);
+    margin-top: 40px;
+    transition: all 0.5s ease-in-out;
+    
+    background: #709775;
+    height: 3px;
+    width: 60px;
+}
+
+.menu{ 
+    margin-left: 25px;
+    margin-right: 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 47px;
+
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.menu:nth-child(2) {
+    color: rgb(0, 0, 0);
+}
+
+.menu:nth-child(1):hover ~.line{
+    width: 70px;
+    transform: translate(25px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(1):hover{
+    color: black;
+}
+
+.menu:nth-child(3):hover ~.line{
+    width: 130px;
+    transform: translate(255px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(3):hover{
+    color: black;
+}
+
+/* nav searcharea */
+#searchArea{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 35px;
+    
+    width: 0px;
+    border: 1px #7C7C7C solid;
+    opacity: 0;
+    transition: 0.5s;
+
+
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+
+#searchArea:focus{
+    outline-color: #709775 !important;
+}
+.containerCart{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+
+}
+.itemsCart{
+    margin-top: 10%;
+    position: relative;
+    height: 90%;
+    width: 800px;
+    background-color: #dddddd;
+    border-radius: 20px;
+
+
+}
+
+.productPage{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+.itemsCartTitle{
+    font-family: 'Raleway';
+    margin: 20px;
+    margin-left: 45px;
+    font-weight: 700;
+    font-size: 27;
+}
+
+.card{
+    margin-top: 25px;
+    height: 200px;
+    width: 95%;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.infoCard{
+    margin-bottom: 8%;
+    background-color: #dddddd;
+    position: relative;
+    height: 350px;
+    width: 350px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 20px;
+
+}
+
+.kosten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+}
+
+.finalKosten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24%;
+    margin-top: 85px;
+}
+.CheckoutButton{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background: #709775;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+}  
+.CheckoutButton:hover{
+    background-color: #4b8452;
+} 
+
+.priceTag1{
+    font-family: 'Roboto';
+}
+.priceTag2{
+    font-family: 'Roboto';
+}
+.priceTag3{
+    position: relative;
+    right: 2px;
+    font-family: 'Roboto';
+    color: red;
+}
+.Versandkosten{
+    font-family: 'Raleway';
+    font-size: 18;
+}
+.Gesamtpreis{
+    font-family: 'Raleway';
+    font-size: 18;
+}
+.Gesamt_preis{
+    font-family: 'Roboto';
+}
+.Rabatt{
+    font-family: 'Raleway';
+    font-size: 18;
+}
+.infoCardTitle{
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.imageCart{
+    width: 17%;
+    margin: 30px;
+}
+.productname{
+    font-family: 'Raleway';
+    margin-bottom: 90px;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.Gesamt{
+    font-family: 'Raleway';
+
+}
+.mengeLabel{
+    position: relative;
+    margin-left: 130px;
+    font-family: 'Verdana';
+}
+.menge{
+    position: relative;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 45px;
+    height: 35px;
+    text-align: center;
+}
+.productprice{
+    position: relative;
+    margin-left: 60px;
+    font-family: 'Raleway';
+    font-family: 'Roboto';
+}

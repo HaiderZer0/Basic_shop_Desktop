@@ -1,0 +1,74 @@
+<head>
+    <title> B&ouml;rni - Home</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/navbar/navbar.css">
+</head>
+
+<body onload=checkSearch();>
+    <header>
+        <nav>
+            <div class="items">
+                <h2 class="logo">B&ouml;rni</h2>
+                <ul>
+                    <a class="menu" href="/startseite2/startseite.html">Home</a>
+                    <a class="menu" href="/shop/shop.html">Shop</a>
+                    <a class="menu" href="/impressum/impressum.html">Impressum</a>
+                    <div class="line"></div>
+
+                </ul>
+                <div class="actions">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
+                    <input id="searchArea" type="text">
+                    <i class="fa-sharp fa-solid fa-cart-shopping cart"><sub class="cart_status"></sub></i>
+                    <div class="profile"></div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1 class="searchTitle">Suchergebnisse für: </h1>
+            <div id="search"></div>
+            <div class="ergebnisse"></div> 
+        </div>
+        <script src="/navbar/navbar.js"></script>
+        <script src="/search/search.js"></script>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="leftside">
+                <h1 class="title">B&ouml;rni</h1>
+                <p class="info">Entdecke jetzt die neuen Handys von<br>Börni mit fairen Preisen!</p>
+                <h2 class="labels">Folge uns</h2>
+                <div class="socialicons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook icon"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://telegram.me"><i class="fa-brands fa-telegram icon"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter icon"></i></a>
+                </div>
+            </div>
+            <div class="seprater"></div>
+            <div class="rightside">
+                <div class="account">
+                    <h2 class="labels">Account</h2>
+                    <a href="#" class="underlabels">Anmelden</a>
+                    <a href="#" class="underlabels">Registrieren</a>
+                    <a href="#" class="underlabels">Passwortvergessen</a>
+                    <a href="#" class="underlabels">Kundenpanel</a>
+                </div>
+                <div class="rechtliches">
+                    <h2 class="labels">Rechtliches</h2>
+                    <a href="#" class="underlabels">AGB</a>
+                    <a href="#" class="underlabels">Widerrufsrichtlinien</a>
+                    <a href="#" class="underlabels">Impressum</a>
+                    <a href="#" class="underlabels">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    user-select: none;
+    margin-left: 20px;
+    font-family: 'Bruno Ace';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 47px;
+    color: #709775;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+    margin: 0px auto;
+}
+
+/* line unter Home, shope und impressum */
+
+hr{
+    background: black;
+    height: 0.5px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    padding-right: 10px;
+}
+
+.profile{
+    cursor: pointer;
+    background-image: url(Börni.png);
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.search{
+    cursor: pointer;
+
+    padding-top: 10px;
+    margin: 10px;
+    font-size: 25px;
+    color: #7C7C7C;
+}
+
+.search:hover{
+    color: #709775;
+}
+
+
+.cart{
+    cursor: pointer;
+
+    padding-top: 10px;
+    margin: 10px;
+    font-size: 25px;
+    color: #7C7C7C;
+}
+.cart:hover{
+    color: #709775;
+}
+
+.cart_status{
+    position: relative;
+    font-size: 12px;
+    color: red;
+}
